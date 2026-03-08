@@ -7,6 +7,9 @@ const rateLimit = require('express-rate-limit');
 const morgan = require('morgan');
 const swaggerUi = require('swagger-ui-express');
 
+// File logger - must be loaded early to capture all console output
+const { logStream } = require('./utils/logger');
+
 // Load env vars
 dotenv.config();
 
@@ -53,9 +56,10 @@ app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // ─── Logging ────────────────────────────────────────────────
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
-}
+// Log to console
+app.use(morgan('dev'));
+// Log all HTTP requests to file
+app.use(morgan(':date[iso] :method :url :status :res[content-length] - :response-time ms', { stream: logStream }));
 
 // ─── API Documentation ─────────────────────────────────────
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {

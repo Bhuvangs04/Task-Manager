@@ -1,0 +1,77 @@
+=== Frontend Dev Server Started at 2026-03-08T05:49:23.603Z ===
+
+[2026-03-08T05:49:23.625Z] [INFO] Vite dev server starting...
+[2026-03-08T05:49:23.638Z] [INFO] Build started
+[2026-03-08T05:49:23.647Z] [INFO] Re-optimizing dependencies because vite config has changed
+[2026-03-08T05:49:23.685Z] [INFO] 
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m497[22m[2m[0m ms[22m
+
+[2026-03-08T05:49:23.686Z] [INFO]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2026-03-08T05:49:23.686Z] [INFO] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2026-03-08T05:49:23.686Z] [INFO] [2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2026-03-08T05:49:53.369Z] [HTTP] GET /index.html 200 - 62ms
+[2026-03-08T05:49:54.077Z] [HTTP] GET /src/main.jsx 200 - 22ms
+[2026-03-08T05:49:54.081Z] [HTTP] GET /@react-refresh 304 - 3ms
+[2026-03-08T05:49:54.184Z] [HTTP] GET /@vite/client 200 - 131ms
+[2026-03-08T05:49:54.209Z] [HTTP] GET /src/context/AuthContext.jsx 200 - 7ms
+[2026-03-08T05:49:54.211Z] [HTTP] GET /src/App.jsx 200 - 0ms
+[2026-03-08T05:49:54.343Z] [HTTP] GET /src/index.css 304 - 1ms
+[2026-03-08T05:49:54.351Z] [HTTP] GET /node_modules/vite/dist/client/env.mjs 304 - 0ms
+[2026-03-08T05:49:54.378Z] [HTTP] GET /src/api/axios.js 200 - 1ms
+[2026-03-08T05:49:54.383Z] [HMR] Client connected via WebSocket
+[2026-03-08T05:49:54.385Z] [HTTP] GET /src/components/Navbar.jsx 200 - 1ms
+[2026-03-08T05:49:54.389Z] [HTTP] GET /src/components/ProtectedRoute.jsx 200 - 0ms
+[2026-03-08T05:49:54.412Z] [HTTP] GET /src/pages/Login.jsx 200 - 2ms
+[2026-03-08T05:49:54.417Z] [HTTP] GET /src/pages/Register.jsx 200 - 1ms
+[2026-03-08T05:49:54.421Z] [HTTP] GET /src/pages/Dashboard.jsx 200 - 1ms
+[2026-03-08T05:49:54.433Z] [HTTP] GET /src/pages/AdminPanel.jsx 200 - 1ms
+[2026-03-08T05:49:54.494Z] [HTTP] GET /node_modules/.vite/deps/react-dom_client.js?v=0160f649 200 - 410ms
+[2026-03-08T05:49:54.496Z] [HTTP] GET /node_modules/.vite/deps/react.js?v=b19b7ec7 200 - 413ms
+[2026-03-08T05:49:54.499Z] [HTTP] GET /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=b19b7ec7 200 - 416ms
+[2026-03-08T05:49:54.500Z] [HTTP] GET /node_modules/.vite/deps/react-hot-toast.js?v=c0cf05bd 200 - 416ms
+[2026-03-08T05:49:54.503Z] [HTTP] GET /node_modules/.vite/deps/axios.js?v=fe262388 200 - 69ms
+[2026-03-08T05:49:54.509Z] [HTTP] GET /node_modules/.vite/deps/react-router-dom.js?v=0c7a09db 200 - 425ms
+[2026-03-08T05:49:54.515Z] [HTTP] GET /node_modules/.vite/deps/react-icons_fi.js?v=8f9d31ac 200 - 1ms
+[2026-03-08T05:49:54.520Z] [HTTP] GET /src/components/TaskForm.jsx 200 - 3ms
+[2026-03-08T05:49:54.522Z] [HTTP] GET /src/components/Navbar.css 304 - 1ms
+[2026-03-08T05:49:54.522Z] [HTTP] GET /src/pages/Auth.css 304 - 0ms
+[2026-03-08T05:49:54.525Z] [HTTP] GET /src/components/TaskCard.jsx 200 - 2ms
+[2026-03-08T05:49:54.527Z] [HTTP] GET /src/pages/Dashboard.css 304 - 1ms
+[2026-03-08T05:49:54.529Z] [HTTP] GET /src/pages/AdminPanel.css 304 - 0ms
+[2026-03-08T05:49:54.531Z] [HTTP] GET /src/components/TaskForm.css 304 - 0ms
+[2026-03-08T05:49:54.532Z] [HTTP] GET /node_modules/.vite/deps/chunk-G3PMV62Z.js?v=7b68951f 200 - 2ms
+[2026-03-08T05:49:54.536Z] [HTTP] GET /node_modules/.vite/deps/chunk-DRWLMN53.js?v=7b68951f 200 - 6ms
+[2026-03-08T05:49:54.536Z] [HTTP] GET /src/components/TaskCard.css 304 - 0ms
+[2026-03-08T05:49:54.565Z] [HTTP] GET /node_modules/.vite/deps/chunk-PJEEZAML.js?v=7b68951f 200 - 35ms
+[2026-03-08T05:49:54.769Z] [HTTP] GET /api/v1/auth/me 200 - 77ms
+[2026-03-08T05:49:54.788Z] [HTTP] GET /api/v1/auth/me 304 - 16ms
+[2026-03-08T05:49:54.833Z] [HTTP] GET /api/v1/tasks?limit=50 304 - 23ms
+[2026-03-08T05:49:54.850Z] [HTTP] GET /api/v1/tasks?limit=50 304 - 16ms
+[2026-03-08T05:50:14.511Z] [HTTP] POST /api/v1/auth/register 201 - 588ms
+[2026-03-08T05:50:14.552Z] [HTTP] GET /api/v1/tasks?limit=50 304 - 19ms
+[2026-03-08T05:50:14.574Z] [HTTP] GET /api/v1/tasks?limit=50 304 - 20ms
+[2026-03-08T05:50:28.442Z] [HTTP] POST /api/v1/tasks 201 - 15ms
+[2026-03-08T05:50:28.476Z] [HTTP] GET /api/v1/tasks?limit=50 200 - 29ms
+[2026-03-08T05:50:33.041Z] [HTTP] PUT /api/v1/tasks/69ad0e24e339bf1450e4897f 200 - 36ms
+[2026-03-08T05:50:33.060Z] [HTTP] GET /api/v1/tasks?limit=50 200 - 15ms
+[2026-03-08T05:50:40.446Z] [HTTP] PUT /api/v1/tasks/69ad0e24e339bf1450e4897f 200 - 17ms
+[2026-03-08T05:50:40.502Z] [HTTP] GET /api/v1/tasks?limit=50 200 - 15ms
+[2026-03-08T05:50:45.157Z] [HTTP] DELETE /api/v1/tasks/69ad0e24e339bf1450e4897f 200 - 17ms
+[2026-03-08T05:50:45.179Z] [HTTP] GET /api/v1/tasks?limit=50 200 - 16ms
+[2026-03-08T05:51:12.182Z] [HTTP] POST /api/v1/auth/login 400 - 8ms
+[2026-03-08T05:51:31.766Z] [HTTP] POST /api/v1/auth/register 400 - 24ms
+[2026-03-08T05:51:36.124Z] [HTTP] POST /api/v1/auth/register 400 - 11ms
+[2026-03-08T05:51:42.108Z] [HTTP] POST /api/v1/auth/register 201 - 506ms
+[2026-03-08T05:51:42.144Z] [HTTP] GET /api/v1/tasks?limit=50 304 - 19ms
+[2026-03-08T05:51:42.159Z] [HTTP] GET /api/v1/tasks?limit=50 304 - 13ms
+[2026-03-08T05:51:44.052Z] [HTTP] GET /api/v1/admin/users?limit=50 200 - 20ms
+[2026-03-08T05:51:44.068Z] [HTTP] GET /api/v1/admin/users?limit=50 304 - 14ms
+[2026-03-08T05:51:51.455Z] [HTTP] PUT /api/v1/admin/users/69ad0b4fca6288301701d8e8/role 200 - 9ms
+[2026-03-08T05:51:51.478Z] [HTTP] GET /api/v1/admin/users?limit=50 200 - 17ms
+[2026-03-08T05:51:57.173Z] [HTTP] DELETE /api/v1/admin/users/69ad0b4fca6288301701d8e8 200 - 26ms
+[2026-03-08T05:51:57.198Z] [HTTP] GET /api/v1/admin/users?limit=50 200 - 20ms
+[2026-03-08T05:52:02.554Z] [HTTP] PUT /api/v1/admin/users/69ad0e6de339bf1450e4899d/role 200 - 13ms
+[2026-03-08T05:52:02.575Z] [HTTP] GET /api/v1/admin/users?limit=50 403 - 13ms
+[2026-03-08T05:52:04.965Z] [HTTP] DELETE /api/v1/admin/users/69ad0e6de339bf1450e4899d 403 - 13ms
+[2026-03-08T05:52:09.433Z] [HTTP] DELETE /api/v1/admin/users/69ad0e15e339bf1450e48976 403 - 9ms
+[2026-03-08T05:52:11.427Z] [HTTP] DELETE /api/v1/admin/users/69ad0e6de339bf1450e4899d 403 - 9ms
