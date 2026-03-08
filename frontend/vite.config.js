@@ -85,7 +85,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://task-manager-7t29.vercel.app',
         changeOrigin: true,
       },
     },
