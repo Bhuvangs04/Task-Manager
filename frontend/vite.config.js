@@ -5,13 +5,24 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const LOG_FILE = path.join(__dirname, '..', 'frontend-log.txt');
 
-// Initialize log file
-fs.writeFileSync(LOG_FILE, `=== Frontend Dev Server Started at ${new Date().toISOString()} ===\n\n`);
-const logStream = fs.createWriteStream(LOG_FILE, { flags: 'a' });
+// Use /tmp on serverless (Vercel) since the main filesystem is read-only
+const isServerless = !!process.env.VERCEL;
+const LOG_DIR = isServerless ? '/tmp' : path.join(__dirname, '..');
+const LOG_FILE = path.join(LOG_DIR, 'frontend-log.txt');
+
+// Initialize log file (gracefully handle read-only FS)
+let loggingEnabled = true;
+let logStream = null;
+try {
+  fs.writeFileSync(LOG_FILE, `=== Frontend Dev Server Started at ${new Date().toISOString()} ===\n\n`);
+  logStream = fs.createWriteStream(LOG_FILE, { flags: 'a' });
+} catch {
+  loggingEnabled = false;
+}
 
 const writeLog = (level, message) => {
+  if (!loggingEnabled || !logStream) return;
   const line = `[${new Date().toISOString()}] [${level}] ${message}\n`;
   logStream.write(line);
 };
