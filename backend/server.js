@@ -46,7 +46,12 @@ app.use('/api/', limiter);
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+      origin: [
+          'http://localhost:5173',
+          'http://localhost:3000',
+          process.env.CLIENT_URL,
+          'https://task-manager-six-smoky.vercel.app',
+      ].filter(Boolean),
     credentials: true,
   })
 );
